@@ -1,0 +1,24 @@
+header {
+  background-color: var(--cor-s1);
+}
+
+.cabecalho-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  padding: 32px 0;
+  margin: 0 auto;
+}
+
+.navegacao ul {
+  display: flex;
+  gap: 0 20px;
+}
+
+.navegacao ul li a {
+  font-family: "poppins", sans-serif;
+  color: var(--cor-s4);
+  font-size: var(--tamanho-p);
+
+
+}
