@@ -1,0 +1,118 @@
+.tecnologia-bg {
+  background: var(--cor-s2);
+  box-shadow: inset 0 120px  var(--cor-s4), inset  0 -120px var(--cor-s4);
+}
+
+.tecnologia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.tecnologia-conteudo {
+  padding-top: 200px;
+}
+.tecnologia-conteudo .subtitulo {
+  display: inline-block;
+  font-family: "roboto", sans-serif;
+  color: var(--cor-s3);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo h1 {
+  line-height: 1;
+  max-width: 16ch;
+  text-transform: lowercase;
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo .texto {
+  font-size: var(--tamanho-m);
+  font-family: "roboto", sans-serif;
+  color: var(--cor-s3);
+  margin-bottom: 20px;
+  max-width: 38ch;
+}
+
+.tecnologia-conteudo .escolha {
+  font-family: "poppins", sans-serif;
+  color: var(--cor-p3);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.tecnologia-conteudo .escolha:hover {
+  color: var(--cor-s4);
+}
+
+.tecnologia-conteudo .escolha::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  display: grid;
+  justify-self: center;
+  position: absolute;
+  background-color: var(--cor-p1);
+}
+
+.tecnologia-conteudo .escolha:hover::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  display: grid;
+  justify-self: center;
+  position: absolute;
+  background-color: var(--cor-s4);
+}
+
+.tecnologia-lista{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.tecnologia-lista h2{
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  color: var(--cor-s4);
+  margin: 8px 0;
+}
+
+.tecnologia-lista p {
+  line-height: 1.3;
+  font-family: 'roboto', sans-serif;
+  color: var(--cor-s3);
+  max-width: 30ch;
+}
+
+.tecnologia-img {
+  border-radius: 4px;
+}
+
+@media(max-width: 1400px) {
+  .tecnologia-bg {
+    box-shadow: none;
+    padding-bottom: 120px;
+  }
+  .tecnologia{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .tecnologia-img {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  .tecnologia-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,38 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2.25rem;
+  font-family: 'Merriweather', serif;
+  align-items: end;
+  background: var(--cor-p1);
+}
+
+.depoimento p  {
+  padding: 0 80px 32px 80px;
+  color: var(--cor-p2);
+  max-width: 28ch;
+
+
+}
+
+.depoimento .nome {
+  display: block;
+  padding: 0 0 80px 80px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: var(--tamanho-m);
+  color: #664400;
+}
+
+@media(max-width: 1300px){
+  .depoimento {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .depoimento p {
+    padding-top: 60px;
+    max-width: 38ch;
+
+  }
+}
+

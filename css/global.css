@@ -24,7 +24,7 @@ img {
 .titulo {
   font-family: "poppins", sans-serif;
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -39,8 +39,7 @@ img {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
   max-width: 1600px;
 }
 
@@ -52,6 +51,7 @@ img {
 :root {
   --cor-p1: #ffbb00;
   --cor-p2: #332200;
+  --cor-p3: #e4a30b;
   --cor-s1: #000;
   --cor-s2: #111;
   --cor-s3: #b2b2b2;

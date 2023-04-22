@@ -1,14 +1,19 @@
-#escolha-a-sua {
-  color: var(--cor-s1);
-  margin: 0 0 40px 220px;
-  text-transform: lowercase;
+.bicicletas {
+  margin-bottom: 120px;
 }
 
-.container-maior ul img {
+#escolha-a-sua {
+  color: var(--cor-s1);
+  text-transform: lowercase;
+  margin-left: 90px;
+  margin-bottom: 40px;
+}
+
+.bicicletas ul img {
   border-radius: 4px;
 }
 
-.container-maior ul {
+.bicicletas ul {
   display: flex;
   gap: 40px;
   font-family: "poppins", sans-serif;
@@ -17,44 +22,14 @@
 .container-maior ul h2  {
   font-size: var(--tamanho-m);
   font-weight: 600;
-  position: relative;
-}
-
-.bicicletas ul li {
-  position: relative;
-}
-
-.bicicletas ul li::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 8px;
-  left: 0px;
-  top: 680px;
-  border-radius: 2px;
-  transition: .3s;
-  background-color: var(--cor-p1);
-  position: absolute;
-}
-
-.bicicletas ul li:hover::before{
-  content: "";
-  display: block;
-  width: 20px;
-  height: 8px;
-  left: 0px;
-  top: 680px;
-  background-color: var(--cor-p1);
-  position: absolute;
 }
 
 .bicicletas ul li:hover .nome-valor {
-  transition: .3s;
   padding-left: 8px;
 }
 
 .container-maior ul span {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--cor-s5);
   font-size: var(--tamnho-p);
   font-family: "roboto", sans-serif;
@@ -64,7 +39,54 @@
   margin-left: 20px;
   padding-top: 16px;
   color: var(--cor-s1);
+  transition: .3s;
+  position: relative;
+
+}
+
+.nome-valor::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  left: -20px;
+  top: 29px;
+  background-color: var(--cor-p1);
+  transition: .3s;
+  position: absolute;
 }
 
 
+.bicicletas ul li:hover .nome-valor::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 8px;
+  left: -20px;
+  top: 29px;
+  background-color: var(--cor-p1);
+  position: absolute;
+}
+
+@media (max-width: 1800px){
+.container-maior{
+  padding: 0 20px;
+}
+}
+
+@media (max-width: 1000px){
+  #escolha-a-sua {
+    margin-left: 60px;
+    font-size: 3.5rem
+  }
+}
+
+@media (max-width: 800px){
+.bicicletas ul {
+  display: grid;
+}
+#escolha-a-sua {
+margin: 0 60px;
+}
+}
 
