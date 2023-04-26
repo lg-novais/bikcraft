@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="estilo.css">
   <title>Bikcraft</title>
@@ -15,20 +18,22 @@
 
 <body>
   <header>
-    <div class="cabecalho-container">
-      <img src="./img/bikcraft.svg" alt="">
+    <div class="cabecalho-bg">
+      <div class="cabecalho container">
+        <a href="./"><img src="./img/bikcraft.svg" alt=""></a>
 
-      <nav class="navegacao">
-        <ul>
-          <li><a href="bicicletas.html">Bicicletas</a></li>
-          <li><a href="seguros.html">Seguros</a></li>
-          <li><a href="contato.html">Contatos</a></li>
-        </ul>
-      </nav>
+        <nav class="navegacao">
+          <ul>
+            <li><a href="bicicletas.html">Bicicletas</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main class="introducao-bg">
     <div class="container introducao">
       <div class="texto-principal">
         <h1 class="titulo">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
@@ -43,7 +48,7 @@
 
   <article aria-labelledby="escolha-a-sua">
     <div class="container-maior bicicletas">
-      <h1 class="titulo" id="escolha-a-sua">Escolha a sua<span class="ponto">.</span></h1>
+      <h1 class="titulo container" id="escolha-a-sua">Escolha a sua<span class="ponto">.</span></h1>
       <ul>
         <li>
           <a href="./magic.html">
@@ -79,8 +84,10 @@
   <article class="tecnologia-bg" aria-labelledby="Você-escolhe-as-suas-cores-e-componentes">
     <div class="container tecnologia">
       <div class="tecnologia-conteudo">
-        <span class="subtitulo">Tecnologia avançada</span>
-        <h1 id="Você-escolhe-as-suas-cores-e-componentes" class="titulo">Você escolhe as suas cores e componentes<span class="ponto">.</span></h1>
+        <div>
+          <span class="subtitulo">Tecnologia avançada</span>
+          <h1 id="Você-escolhe-as-suas-cores-e-componentes" class="titulo">Você escolhe as suas cores e componentes<span class="ponto">.</span></h1>
+        </div>
         <p class="texto">
           Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.
         </p>

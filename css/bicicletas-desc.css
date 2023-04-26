@@ -1,0 +1,148 @@
+.titulo-subtitulo {
+  background: #111;
+  line-height: 1.3 ;
+  padding: 60px 0;
+}
+
+.titulo-subtitulo h1{
+  text-transform: lowercase;
+}
+
+.titulo-subtitulo .subtitulo {
+  display: inline-block;
+  font-family: "roboto", sans-serif;
+  color: var(--cor-s3);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bike-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicletas-bg:nth-child(3) {
+  background-image: linear-gradient(to right, #fff 30%, #111 0% )
+}
+
+.bike-conteudo.destaque h2{
+  color: var(--cor-s4);
+}
+
+.bike-conteudo.destaque .texto {
+  color: var(--cor-s3);
+}
+
+.bike-conteudo.destaque ul li {
+  color: var(--cor-s3);
+}
+
+.bicicletas-bg {
+  padding: 60px 0;
+}
+
+.bike-img img {
+  border-radius: 4px;
+}
+
+.bike-img  {
+  position: relative;
+
+}
+
+.bike-preco {
+  display: inline-block;
+  background-color: var(--cor-s1);
+  color: var(--cor-s4);
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+  top: 20px;
+  right: 0.4px;
+  position: absolute;
+}
+
+.bike-conteudo h2 {
+  font-size: 2.25rem;
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+
+.bike-conteudo h2::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+}
+
+.bike-conteudo .texto {
+  font-size: 1.25rem;
+  font-family: 'roboto', sans-serif;
+  margin-bottom: 32px;
+  color: var(--cor-s5);
+}
+
+.bike-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bike-lista ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  font-family: 'poppins', sans-serif;
+  color: var(--cor-s5);
+  line-height: 2;
+}
+
+.bike-lista .btn {
+  place-self: end;
+  color: var(--cor-p2);
+  background: var(--cor-p1);
+  padding: 16px 64px 16px 32px ;
+  position: relative;
+}
+
+.bike-lista .btn:hover {
+  background: var(--cor-p3);
+}
+
+.bike-lista .btn::after {
+ content: '';
+ display: inline-block;
+ width: 18px;
+ height: 10px;
+ top: 25px;
+ left: 150px;
+ background-image: url('../img/icones/seta.svg');
+ transition: .3s;
+ position: absolute;
+}
+
+.bike-lista .btn:hover:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  left: 160px;
+  background: url('../img/icones/seta.svg') no-repeat;
+ }
+
+ @media (max-width: 1000px){
+  .bike-info {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-bg:nth-child(3) {
+    background: var(--cor-s2)
+  }
+ }

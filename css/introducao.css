@@ -1,10 +1,10 @@
-main {
+.introducao-bg {
   background-color: var(--cor-s1);
   box-shadow: inset 0 -120px var(--cor-s4);
   margin-bottom: 120px;
 }
 
-main img {
+.introducao-bg img {
   border-radius: 4px;
   object-fit: cover;
 }
@@ -41,7 +41,7 @@ main img {
 }
 
 @media (max-width: 1600px ){
-  .container, header{
+  .container{
     padding: 0 20px;
   }
 }
@@ -52,11 +52,11 @@ main img {
 }
 
 @media (max-width: 1200px){
-  main {
+  .introducao-bg {
     box-shadow: none;
   }
 
-  main img {
+  .introducao-bg img {
     margin-bottom: 20px;
   }
 }
@@ -73,9 +73,6 @@ main img {
 }
 
 @media (max-width: 1000px){
-  header {
-    padding-bottom: 60px;
-  }
   .cabecalho-container{
     display: grid;
     justify-content: center;

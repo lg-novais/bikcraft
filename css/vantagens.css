@@ -1,0 +1,31 @@
+.vantagens-bg {
+  background: var(--cor-s1);
+  padding: 120px 0;
+}
+
+.vantagens-conteudo h1 {
+  margin-bottom: 80px;
+  text-transform: lowercase;
+}
+
+.vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.vantagens ul li h3{
+  color: var(--cor-s4);
+  margin: 8px 0 ;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.vantagens ul li p {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: #9c9c9c;
+  max-width: 38ch;
+}

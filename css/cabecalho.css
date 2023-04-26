@@ -1,11 +1,10 @@
-header {
+.cabecalho-bg {
   background-color: var(--cor-s1);
 }
 
-.cabecalho-container {
+.cabecalho {
   display: flex;
   justify-content: space-between;
-  max-width: 1600px;
   padding: 32px 0;
   margin: 0 auto;
 }
@@ -20,6 +19,33 @@ header {
   font-family: "poppins", sans-serif;
   color: var(--cor-s4);
   font-size: var(--tamanho-p);
+  position: relative;
+}
 
+.navegacao ul li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  margin-top: 4px;
+  position: absolute;
+  background: #fff;
+  transition: .3s;
+}
 
+.navegacao ul li a:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+  position: absolute;
+  background: #fff;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding-bottom: 60px;
+    padding: 0 20px;
+  }
 }
