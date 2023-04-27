@@ -1,0 +1,168 @@
+#contato .contato-bg {
+  background-image: linear-gradient(to bottom, #111 65%, #f7f7f7 0);
+}
+
+#contato .contato-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 120px;
+}
+
+.contato-titulo {
+  line-height: 1.3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#contato .subtitulo {
+  display: inline-block;
+  font-family: "roboto", sans-serif;
+  color: var(--cor-s3);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.contato-titulo h1 {
+  text-transform: lowercase;
+}
+
+.contato-loja {
+  background: var(--cor-s1);
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  border-radius: 4px 0px 0 4px;
+}
+
+.contato-loja h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--cor-s4);
+}
+
+.contato-loja .endereco li {
+  line-height: 1.8;
+}
+
+.contato-loja .endereco {
+  font-family: "roboto", sans-serif;
+  margin-top: 60px;
+  color: #ccc;
+  position: relative;
+}
+
+.contato-loja .endereco::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 22px;
+  left: -26px;
+  position: absolute;
+  background: url("../img/icones/local.svg");
+}
+
+.contato-loja .email {
+  font-family: "roboto", sans-serif;
+  margin-top: 60px;
+  color: #ccc;
+  position: relative;
+}
+
+.contato-loja .email::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 18px;
+  left: -28px;
+  position: absolute;
+  background: url("../img/icones/email.svg");
+}
+
+.contato-loja .email li {
+  line-height: 1.8;
+}
+
+.contato-loja .telefone {
+  font-family: "roboto", sans-serif;
+  margin-top: 60px;
+  color: #ccc;
+  position: absolute;
+}
+
+.contato-loja .telefone::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 18px;
+  left: -28px;
+  position: absolute;
+  background: url("../img/icones/telefone.svg");
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 32px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.contato-form {
+  background: var(--cor-s4);
+  border-radius: 0px 4px 4px 0;
+  padding: 60px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+#contato form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "roboto", sans-serif;
+  border-radius: 4px;
+  border: 2px solid #ededed;
+  padding: 12px;
+  background: #f7f7f7;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid var(--cor-p1);
+  box-shadow: 0 0 0 3px #fea;
+  outline: none;
+}
+
+#contato button {
+  border: none;
+  background: var(--gradiente-amarelo);
+  color: var(--cor-p2);
+  cursor: pointer;
+}
+
+#contato button:hover {
+  background: var(--cor-p3);
+}
+
+.col-2 {
+  grid-column: span 2;
+}

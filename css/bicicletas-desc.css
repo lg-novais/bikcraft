@@ -108,7 +108,7 @@
 .bike-lista .btn {
   place-self: end;
   color: var(--cor-p2);
-  background: var(--cor-p1);
+  background: var(--gradiente-amarelo);
   padding: 16px 64px 16px 32px ;
   position: relative;
 }

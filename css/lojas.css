@@ -1,0 +1,96 @@
+.lojas-bg {
+  background: #f7f7f7;
+  padding-bottom: 120px;
+}
+
+.lojas-bg .titulo {
+  color: var(--cor-s1);
+  text-transform: lowercase;
+  margin-bottom: 60px;
+}
+
+.lojas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.estado-info{
+  background: var(--cor-s4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.estado-info h3 {
+  font-family: 'poppins', sans-serif;
+  margin: 32px 60px;
+  position: relative;
+}
+
+.estado-info h3::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 8px;
+  left: -24px;
+  top: 10px;
+  background-color: var(--cor-p1);
+  position: absolute;
+}
+
+.loja-endereco-contato {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 72px 32px 72px;
+  font-family: 'roboto', sans-serif;
+  color: var(--cor-s5);
+  position: relative;
+}
+
+.loja-endereco-contato::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 100%;
+  left: -12px;
+  position: absolute;
+  background: #f7f7f7;
+}
+
+.loja-endereco-contato ul:last-child {
+  position: relative;
+}
+
+.loja-endereco-contato ul:last-child:before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 100%;
+  left: -12px;
+  position: absolute;
+  background: #f7f7f7;
+}
+
+.loja-endereco-contato ul li{
+  line-height: 2;
+
+}
+
+.estado-info p {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  margin-left: 60px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.estado-info p::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height:20px;
+  left: -30px;
+  position: absolute;
+  background: url('/img/icones/horario.svg');
+}

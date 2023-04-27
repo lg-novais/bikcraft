@@ -70,7 +70,7 @@
 
 .seguro-plano .btn.amarelo {
   color: var(--cor-p2);
-  background: var(--cor-p1);
+  background: var(--gradiente-amarelo);
   margin-top: 32px;
 }
 

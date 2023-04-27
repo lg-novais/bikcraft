@@ -1,0 +1,205 @@
+.nimbus-bg {
+  background: var(--cor-s2);
+}
+
+.nimbus > div {
+  padding: 60px 0;
+}
+
+#nimbus .subtitulo {
+  display: inline-block;
+  font-family: "roboto", sans-serif;
+  color: var(--cor-s3);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.nimbus-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.imgs-menores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nimbus-imgs img {
+  border-radius: 4px;
+}
+
+.nimbus-desc .texto {
+  font-family: "roboto", sans-serif;
+  font-size: 1.5rem;
+  color: var(--cor-s3);
+  max-width: 42ch;
+}
+
+#nimbus .btn {
+  background-image: var(--gradiente-amarelo);
+  color: var(--cor-p2);
+  margin-top: 20px;
+}
+
+#nimbus .btn:hover{
+  background: var(--cor-p3);
+}
+
+.botao-estoque {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.75rem;
+  color: #9c9c9c;
+}
+
+.estoque {
+  margin-top: 20px;
+}
+
+.estoque .prazo {
+  background-color: var(--cor-s1);
+  padding: 4px 8px 4px 32px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.estoque .prazo::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  left: 10px;
+  background-image: url("../img/icones/entrega.svg");
+  position: absolute;
+}
+
+.estoque .quantidade {
+  background-color: var(--cor-s1);
+  padding: 4px 0px 4px 32px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.estoque .quantidade::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  left: 10px;
+  background-image: url("../img/icones/estoque.svg");
+  position: absolute;
+}
+
+.nimbus-info h2 {
+  font-family: 'poppins', sans-serif;
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--cor-s4);
+  margin-top: 40px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.nimbus-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+  padding: 32px;
+  border-radius: 4px;
+  background: var(--cor-s1);
+}
+
+.nimbus-info ul li h3 {
+  font-family: 'poppins', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: var(--cor-s4);
+}
+
+.nimbus-info ul li p {
+  font-family: 'roboto', sans-serif;
+  max-width: 32ch;
+  color: var(--cor-s3);
+}
+
+.nimbus-ficha h2 {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: var(--cor-s4);
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.nimbus-ficha ul {
+  background: var(--cor-s1);
+  border-radius: 4px;
+  color: #ccc;
+  font-family: 'roboto', sans-serif;
+  padding: 32px 32px 20px 32px;
+}
+
+.nimbus-ficha ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.nimbus-ficha ul li::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  top: 23px;
+  background: var(--cor-s2);
+  position: absolute;
+}
+
+.nimbus-ficha ul li:last-child::after {
+  display: none;
+}
+
+#nimbus .seguro-bg {
+  box-shadow: inset 0 120px var(--cor-s4), inset 0 -120px var(--cor-s1);
+  background: var(--cor-s2);
+}
+
+#nimbus .seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#nimbus .seguro img {
+  border-radius: 4px;
+}
+
+#nimbus .seguro-conteudo h2 {
+  font-size: 3rem;
+  font-family: 'poppins', sans-serif;
+  color: var(--cor-s4);
+  line-height: 1.2;
+  max-width: 18ch;
+}
+
+#nimbus .seguro-conteudo p {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.5rem;
+  color: var(--cor-s3);
+  max-width: 38ch;
+  margin-top: 32px;
+}
+
+
